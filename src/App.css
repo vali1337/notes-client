@@ -36,3 +36,331 @@
     transform: rotate(360deg);
   }
 }
+
+
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  padding-left: 5%;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.add-note {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-note h2 {
+  margin-bottom: 0.5rem;
+}
+
+.add-note input,
+.add-note textarea,
+.add-note button {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.add-note button {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.note-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.note {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note h3 {
+  margin-bottom: 0.5rem;
+}
+
+.note button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-note {
+  text-align: center;
+  margin: 1rem;
+}
+
+.add-note button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-note-form {
+  display: none;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.add-note-form h2 {
+  margin-bottom: 0.5rem;
+}
+
+.add-note-form input,
+.add-note-form textarea,
+.add-note-form button {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.note {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note h3 {
+  margin-bottom: 0.5rem;
+}
+
+.note button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-note-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #5cb85c; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-note-button:hover {
+  background-color: #4ca74c; 
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  text-indent: 50px;
+}
+
+.note-content {
+  flex: 1;
+  margin-top: auto; 
+  text-align: justify;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.note button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note-title {
+  font-size: 1rem; 
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.note-title button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.note-content {
+  margin-top: auto; 
+}
+
+.authentication {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.authentication h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.authentication input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.authentication button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.authentication button[type="button"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+.authentication button[type="button"]:hover {
+  background-color: #bbb;
+}
+
+
+
+
+
+
+.authentication {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.authentication h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.authentication input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.authentication button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.authentication button[type="button"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+.authentication button[type="button"]:hover {
+  background-color: #bbb;
+}
